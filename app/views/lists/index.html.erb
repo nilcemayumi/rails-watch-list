@@ -1,5 +1,6 @@
 <div class="container">
-  <h1>Lists</h1>
+  <h1>My Lists</h1>
+  <p><%= link_to "Create a new list", new_list_path %></p>
   <% @lists.each do |list| %>
     <p><%= link_to list.name, list_path(list) %></p>
   <% end %>
