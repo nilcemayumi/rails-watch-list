@@ -3,7 +3,7 @@
     <% @list.bookmarks.each do |bookmark| %>
       <div>
         <%= image_tag bookmark.movie.poster_url , style:'height:200px; width:auto;' %>
-        <p><%= bookmark.movie.title %></p>
+        <p><%= bookmark.movie.title %> (<%= bookmark.movie.rating %>)</p>
         <p><%= bookmark.movie.overview %></p>
         <p><%= bookmark.comment %></p>
         <p><%= link_to "Delete bookmark",
